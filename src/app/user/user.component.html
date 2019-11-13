@@ -1,0 +1,20 @@
+<div class="col-md-6">
+  <table class="table table-striped">
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Country</th>
+    <th>Delete</th>
+    <th>Update</th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let user of users">
+          <td>{{user.name}}</td>
+          <td>{{user.country}}</td>
+          <td><button class="btn btn-danger" (click)="deleteUser(user)"> Delete</button></td>
+          <td><button class="btn btn-danger" (click)="updateUser(user)"> Update</button></td>
+      </tr>
+  </tbody>
+    </table>
+  </div>
