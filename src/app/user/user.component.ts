@@ -33,13 +33,4 @@ deleteUser(user: user): void {
     })
 };
 
-updateUser(user: user): void {
-  this.httpClientService.updateUser(user)
-    .subscribe( data => {
-      this.users = this.users.filter(u => u !== user);
-      alert(user.name +" is Deleted Successfully")
-    })
-};
-
-
 }

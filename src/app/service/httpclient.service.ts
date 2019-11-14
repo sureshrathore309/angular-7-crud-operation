@@ -29,10 +29,6 @@ export class HttpClientService {
     return this.httpClient.delete<user>(this.baseUri+"/user" + "/"+ user.id);
   }
 
-  public updateUser(user) {
-    return this.httpClient.put<user>(this.baseUri+"/user/update", user);
-  }
-
   public createuser(user) {
     console.log(user)
     return this.httpClient.post<user>(this.baseUri+"/user/create", user);
